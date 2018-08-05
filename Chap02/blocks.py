@@ -2,13 +2,13 @@
 # Copyright 2009-2017 BHG http://bw.org/
 
 x = 42
-y = 73
+y = 42
 
-if x < y:
-    z = 132
+if x > y:
+    print('x > y: x is {} and y is {}'.format(x, y))
+elif x < y:
     print('x < y: x is {} and y is {}'.format(x, y))
-    print('line 2')
-    print('line 3')
-    print('line 4')
-
-print ('z is {}'.format(z))
+elif x == y:
+    print('x = y: x is {} and y is {}'.format(x, y))
+else:
+    print('do something else')
